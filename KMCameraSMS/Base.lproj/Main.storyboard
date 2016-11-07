@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qbX-hN-DxR">
+                                <rect key="frame" x="0.0" y="420" width="600" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4R-dM-ndF">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mj8-xe-0NV"/>
+                                        </constraints>
+                                        <state key="normal" title="openCamera"/>
+                                        <connections>
+                                            <action selector="actionOpenCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Xw-fX-oBp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LP-YZ-Ao8">
+                                        <rect key="frame" x="0.0" y="40" width="600" height="40"/>
+                                        <state key="normal" title="Gallary"/>
+                                        <connections>
+                                            <action selector="actionOpenGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8SP-UB-JUf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8T4-wR-fBu">
+                                        <rect key="frame" x="0.0" y="80" width="600" height="40"/>
+                                        <state key="normal" title="Mail"/>
+                                        <connections>
+                                            <action selector="actionMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KwQ-AQ-zXl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiW-cv-M6N">
+                                        <rect key="frame" x="0.0" y="120" width="600" height="40"/>
+                                        <state key="normal" title="SMS"/>
+                                        <connections>
+                                            <action selector="actionSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYj-ov-wJc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8LP-YZ-Ao8" firstAttribute="height" secondItem="N4R-dM-ndF" secondAttribute="height" id="1Eo-A0-LqT"/>
+                                    <constraint firstItem="8T4-wR-fBu" firstAttribute="width" secondItem="N4R-dM-ndF" secondAttribute="width" id="Cky-kf-RIj"/>
+                                    <constraint firstItem="IiW-cv-M6N" firstAttribute="width" secondItem="N4R-dM-ndF" secondAttribute="width" id="MXT-dY-rjZ"/>
+                                    <constraint firstItem="8T4-wR-fBu" firstAttribute="height" secondItem="N4R-dM-ndF" secondAttribute="height" id="S1x-XT-MNm"/>
+                                    <constraint firstItem="IiW-cv-M6N" firstAttribute="height" secondItem="N4R-dM-ndF" secondAttribute="height" id="dAD-op-onE"/>
+                                    <constraint firstItem="8LP-YZ-Ao8" firstAttribute="width" secondItem="N4R-dM-ndF" secondAttribute="width" id="mcE-3e-D47"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIv-2f-jvW">
+                                <rect key="frame" x="0.0" y="20" width="600" height="380"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tIv-2f-jvW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="C1y-0d-BKA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tIv-2f-jvW" secondAttribute="trailing" constant="-20" id="DnI-g7-mKO"/>
+                            <constraint firstItem="N4R-dM-ndF" firstAttribute="top" secondItem="tIv-2f-jvW" secondAttribute="bottom" constant="20" id="S6n-rm-xEH"/>
+                            <constraint firstItem="qbX-hN-DxR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMm-Fk-9JP"/>
+                            <constraint firstItem="qbX-hN-DxR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="orQ-KC-OzJ"/>
+                            <constraint firstItem="tIv-2f-jvW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="t6R-h9-AlZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qbX-hN-DxR" secondAttribute="bottom" constant="20" id="vdx-yk-yfs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qbX-hN-DxR" secondAttribute="trailing" constant="-20" id="woY-Vg-mLk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="tIv-2f-jvW" id="gkF-cg-Gfi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
